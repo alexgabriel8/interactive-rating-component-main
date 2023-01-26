@@ -22,8 +22,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://alexgabriel8.github.io/interactive-rating-component-main/](https://alexgabriel8.github.io/interactive-rating-component-main/)
+- Live Site: [https://alexgabriel8.github.io/interactive-rating-component-main/](https://alexgabriel8.github.io/interactive-rating-component-main/)
 
 ## My process
 
@@ -36,8 +35,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### What I learned
 
-This is the first project where I used Flexbox from the start and it really made things much easier. It also served as a nice review of JavaScript for me, since
-
+This is the first project where I used Flexbox from the start and it really made things much easier.
 
 ## Acknowledgments
 
