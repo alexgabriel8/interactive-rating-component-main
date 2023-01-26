@@ -6,7 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="stylesheet" href="styles/style.css">
-  <script src="js/script.js"></script>
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,32 +15,32 @@
 <body>
 <main>
   <section id="rating-area">
-    <img src="images/icon-star.svg" alt="photo of cartoonish star" class="rounded-background" id="star">
+    <img src="images/icon-star.svg" alt="photo of cartoonish star" id="star">
     <h1>How did we do?</h1>
     <p>Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
-      <ol id="list">
-        <li class="rounded-background" id="rating-1" onclick="changeActiveRating(1)">1</li>
-        <li class="rounded-background aroundActiveRating" id="rating-2" onclick="changeActiveRating(2)">2</li>
-        <li class="rounded-background activeRating" id="rating-3" onclick="changeActiveRating(3)">3</li>
-        <li class="rounded-background aroundActiveRating" id="rating-4" onclick="changeActiveRating(4)">4</li>
-        <li class="rounded-background" id="rating-5" onclick="changeActiveRating(5)">5</li>
-      </ol>
-      <button id="btn-submit" onclick="changeActiveRating()">Submit</button>
+      <form action="">
+        <label for="rating-1" id="label-r1" onclick="changeActiveRating(1)">1</label>
+        <input class="invisible" type="radio" name="rating" id="rating-1">
+        <label for="rating-2" class="aroundActiveRating" id="label-r2" onclick="changeActiveRating(2)">2</label>
+        <input class="invisible" type="radio" name="rating" id="rating-2">
+        <label for="rating-3" class="activeRating" id="label-r3" onclick="changeActiveRating(3)">3</label>
+        <input class="invisible" type="radio" name="rating" id="rating-3">
+        <label for="rating-4" class="aroundActiveRating" id="label-r4" onclick="changeActiveRating(4)">4</label>
+        <input class="invisible" type="radio" name="rating" id="rating-4">
+        <label for="rating-5" id="label-r5" onclick="changeActiveRating(5)">5</label>
+        <input class="invisible" type="radio" name="rating" id="rating-5">
+      </form>
+      <button id="btn-submit" onclick="processRating()">Submit</button>
+  </section>
+  <section class="invisible" id="processed-rating">
+    <img src="images/illustration-thank-you.svg" alt="smartphone illustration" id="img-phone">
+    <p id="paragraph-with-rating">You selected 0 out of 5</p>
+    <h1>Thank you!</h1>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
   </section>
 </main>
-
-  
-
-
-
-
-
-  <!-- You selected 0 out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
+<script src="js/script.js"></script>
 </body>
 </html>

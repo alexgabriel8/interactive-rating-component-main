@@ -40,16 +40,13 @@ section#rating-area {
 
 img#star {
     width: 15px;
+    padding: 13px;    
     margin-bottom: 10px;
-}
-
-.rounded-background {
-    padding: 15px;
-    background-color: hsl(215, 20%, 22%);
+    background-color: hsla(216, 12%, 54%, 0.089);
     border-radius: 50%;
 }
 
-section#rating-area > h1 {
+section > h1 {
     font-size: 1.7em;
     font-weight: bold;
     text-align: left;
@@ -57,33 +54,38 @@ section#rating-area > h1 {
     color: var(--white);
 }
 
-section#rating-area p {
+section p {
     color: var(--medium-grey);
     font-size: 0.9em;
     line-height: 1.5em;
 }
 
+.invisible {
+    display: none;
+}
 
-section#rating-area ol {
+form {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
-
-li {
-    width: 20px;
-    text-align: center;
+label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
-    color: var(--light-grey);
-}
-
-section#rating-area li:hover {
+    width: 40px;
+    height: 40px;
+    background-color: hsla(216, 12%, 54%, 0.089);
+    border-radius: 50%;
+    color: var(--medium-grey);
     cursor: pointer;
-    background-color: var(--medium-grey);
-    color: white;
+
+    transition: background-color 0.2s;
 }
 
-section#rating-area li:active {
+label:hover {
     background-color: var(--orange);
+    color: white;
 }
 
 .activeRating {
@@ -91,7 +93,7 @@ section#rating-area li:active {
     color: white;
 }
 .aroundActiveRating {
-    background-color: hsla(212, 12%, 46%, 0.527);
+    background-color: hsla(212, 12%, 46%, 0.267);
     color: hsl(216, 25%, 76%);
 }
 
@@ -111,3 +113,36 @@ button#btn-submit:hover {
     color: var(--orange);
     cursor: pointer;
 }
+
+section#processed-rating {
+    width: 300px;
+    height: 325px;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom, var(--dark-blue), hsl(210, 21%, 15%) 90%);
+    border-radius: 30px;
+}
+
+#img-phone {
+    width: 150px;
+}
+
+section#processed-rating p {
+    text-align: center;
+}
+
+#paragraph-with-rating {
+    width: 150px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(216, 12%, 54%, 0.137);
+    color: var(--orange);
+    font-size: 0.85rem;
+    border-radius: 15px;
+}
+
